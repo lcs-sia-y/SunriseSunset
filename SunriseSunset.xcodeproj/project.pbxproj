@@ -11,6 +11,8 @@
 		FCE876672580065200F8D0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE876662580065200F8D0CC /* ContentView.swift */; };
 		FCE876692580065C00F8D0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE876682580065C00F8D0CC /* Assets.xcassets */; };
 		FCE8766C2580065C00F8D0CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE8766B2580065C00F8D0CC /* Preview Assets.xcassets */; };
+		FCE8767D25814D8B00F8D0CC /* Sunrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8767C25814D8B00F8D0CC /* Sunrise.swift */; };
+		FCE876852583D11300F8D0CC /* TorontoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE876842583D11300F8D0CC /* TorontoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		FCE876682580065C00F8D0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE8766B2580065C00F8D0CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCE8766D2580065C00F8D0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE8767C25814D8B00F8D0CC /* Sunrise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunrise.swift; sourceTree = "<group>"; };
+		FCE876842583D11300F8D0CC /* TorontoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 			children = (
 				FCE876642580065200F8D0CC /* SunriseSunsetApp.swift */,
 				FCE876662580065200F8D0CC /* ContentView.swift */,
+				FCE8767C25814D8B00F8D0CC /* Sunrise.swift */,
 				FCE876682580065C00F8D0CC /* Assets.xcassets */,
 				FCE8766D2580065C00F8D0CC /* Info.plist */,
 				FCE8766A2580065C00F8D0CC /* Preview Content */,
+				FCE876842583D11300F8D0CC /* TorontoView.swift */,
 			);
 			path = SunriseSunset;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE876852583D11300F8D0CC /* TorontoView.swift in Sources */,
+				FCE8767D25814D8B00F8D0CC /* Sunrise.swift in Sources */,
 				FCE876672580065200F8D0CC /* ContentView.swift in Sources */,
 				FCE876652580065200F8D0CC /* SunriseSunsetApp.swift in Sources */,
 			);
