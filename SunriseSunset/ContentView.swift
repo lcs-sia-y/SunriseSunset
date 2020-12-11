@@ -107,6 +107,8 @@ struct ContentView: View {
                 Spacer()
             }
             .navigationTitle("Sunrise")
+            
+            
 
         }
         
