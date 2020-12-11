@@ -23,65 +23,69 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
-                            
-                Button(action: {
-                    fetchSunriseData()
-                }, label: {
-                    Text("Get data")
-                })
-                
-                Button(action: {
-                    locationAddress = "https://api.sunrise-sunset.org/json?lat=43.650213&lng=-79.404837"
-                    fetchSunriseData()
-                    city = "Toronto"
-                }, label: {
-                    Text("Get data for Toronto")
-                })
-                
-                Button(action: {
-                    locationAddress = "https://api.sunrise-sunset.org/json?lat=31.26486&lng=121.43865"
-                    fetchSunriseData()
-                    city = "Shanghai"
-                }, label: {
-                    Text("Get data for Shanghai")
-                })
-                
-                Button(action: {
-                    locationAddress = "https://api.sunrise-sunset.org/json?lat=42.36679&lng=71.05958"
-                    fetchSunriseData()
-                    city = "Boston"
-                }, label: {
-                    Text("Get data for Boston")
-                })
-                
-                Button(action: {
-                    locationAddress = "https://api.sunrise-sunset.org/json?lat=51.51463&lng=-0.13459"
-                    fetchSunriseData()
-                    city = "London UK"
-                }, label: {
-                    Text("Get data for London UK")
-                })
-                
-                Button(action: {
-                    locationAddress = "https://api.sunrise-sunset.org/json?lat=40.71380&lng=-74.00581e"
-                    fetchSunriseData()
-                    city = "New York"
-                }, label: {
-                    Text("Get data for New York")
-                })
-                
-                Button(action: {
-                    locationAddress = "https://api.sunrise-sunset.org/json?lat=48.86194&lng=-235117"
-                    fetchSunriseData()
-                    city = "Paris"
-                }, label: {
-                    Text("Get data for Paris")
-                })
-                
+                     
+                Group {
+                    
+                    Button(action: {
+                        fetchSunriseData()
+                    }, label: {
+                        Text("Get data")
+                    })
+                    
+                    Button(action: {
+                        locationAddress = "https://api.sunrise-sunset.org/json?lat=43.650213&lng=-79.404837"
+                        fetchSunriseData()
+                        city = "Toronto"
+                    }, label: {
+                        Text("Get data for Toronto")
+                    })
+                    
+                    Button(action: {
+                        locationAddress = "https://api.sunrise-sunset.org/json?lat=31.26486&lng=121.43865"
+                        fetchSunriseData()
+                        city = "Shanghai"
+                    }, label: {
+                        Text("Get data for Shanghai")
+                    })
+
+                    Button(action: {
+                        locationAddress = "https://api.sunrise-sunset.org/json?lat=42.36679&lng=71.05958"
+                        fetchSunriseData()
+                        city = "Boston"
+                    }, label: {
+                        Text("Get data for Boston")
+                    })
+
+                    Button(action: {
+                        locationAddress = "https://api.sunrise-sunset.org/json?lat=51.51463&lng=-0.13459"
+                        fetchSunriseData()
+                        city = "London UK"
+                    }, label: {
+                        Text("Get data for London UK")
+                    })
+
+                    Button(action: {
+                        locationAddress = "https://api.sunrise-sunset.org/json?lat=40.71380&lng=-74.00581e"
+                        fetchSunriseData()
+                        city = "New York"
+                    }, label: {
+                        Text("Get data for New York")
+                    })
+
+                    Button(action: {
+                        locationAddress = "https://api.sunrise-sunset.org/json?lat=48.86194&lng=-235117"
+                        fetchSunriseData()
+                        city = "Paris"
+                    }, label: {
+                        Text("Get data for Paris")
+                    })
+                    
+                }
+
                 HStack {
                     Text(city)
                 }
-                
+
                 HStack {
                     Text("Day length:")
                         .fontWeight(.bold)
@@ -89,16 +93,17 @@ struct ContentView: View {
                     Text(retrievedData.results.day_length)
                 }
                 .padding()
-                
+
                 Spacer()
+
                 HStack {
                     Text("Sunrise Time:")
                         .fontWeight(.bold)
                     Spacer()
-//                    Text(retrievedData.results.sunrise_time)
+                    Text(retrievedData.results.sunrise)
                 }
                 .padding()
-                
+
                 Spacer()
             }
             .navigationTitle("Sunrise")
@@ -157,6 +162,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Text("Hello, World!")
+        ContentView()
     }
 }

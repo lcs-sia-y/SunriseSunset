@@ -24,3 +24,4 @@ struct SunriseResponse: Codable {
     var results: Sunrise = Sunrise()
     var status: String = ""
 }
+
